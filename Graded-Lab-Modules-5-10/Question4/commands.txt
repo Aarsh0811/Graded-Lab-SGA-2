@@ -1,25 +1,38 @@
-cd ~/Graded-Lab-Modules-5-10/Question4
+1. cd ~/Graded-Lab-Modules-5-10/Question4
+I changed to the Question4 folder so that all the files for this question would be created in the correct directory.
 
-mkdir screenshots
+2. mkdir screenshots
+I created a screenshots folder to store the screenshots required for this question.
 
-printf "INFO Server started\nWARNING Disk usage at 70 percent\nINFO User connected\n" > app.log
+3. printf "INFO Server started\nWARNING Disk usage at 70 percent\nINFO User connected\n" > app.log
+I created the app.log file and added a few sample log entries to it. These entries were used to simulate a log file for monitoring.
 
-cat app.log
+4. cat app.log
+I displayed the contents of app.log to make sure the log entries had been written correctly.
 
-tail -F app.log 2>/dev/null | grep --line-buffered "ERROR" >> error_report.log
+5. tail -F app.log 2>/dev/null | grep --line-buffered "ERROR" >> error_report.log
+I started monitoring the log file in real time and filtered only the lines containing ERROR. Any matching entries were automatically saved to error_report.log.
 
-echo "INFO Scheduled task completed" >> app.log
+6. echo "INFO Scheduled task completed" >> app.log
+I added a new INFO message to the log file. Since it was not an error, it was not copied to the error report.
 
-echo "ERROR Database connection failed" >> app.log
+7. echo "ERROR Database connection failed" >> app.log
+I added an ERROR message to the log file. The monitoring command detected it and saved it to error_report.log.
 
-echo "WARNING Memory usage increased" >> app.log
+8. echo "WARNING Memory usage increased" >> app.log
+I added a WARNING message to the log file. This entry appeared in app.log but was ignored by the error filter.
 
-echo "ERROR Child process stopped responding" >> app.log
+9. echo "ERROR Child process stopped responding" >> app.log
+I added another ERROR message to the log file. It was automatically detected and added to error_report.log.
 
-cat app.log
+10. cat app.log
+I displayed the complete log file to verify that all the log entries had been added successfully.
 
-cat error_report.log
+11. cat error_report.log
+I viewed the contents of error_report.log to confirm that only the ERROR messages had been captured.
 
-nano explanations.txt
+12. nano explanations.txt
+I opened explanations.txt to write a short explanation for each command used in this question.
 
-nano commands.txt
+13. nano commands.txt
+I opened commands.txt to record all the commands I executed while completing this question.

@@ -1,15 +1,23 @@
-cd ~/Graded-Lab-Modules-5-10/Question2
+1. cd ~/Graded-Lab-Modules-5-10/Question2
+I changed to the Question2 folder so that all the files I created for this question would be saved in the correct location.
 
-mkdir screenshots
+2. mkdir screenshots
+I created a screenshots folder to keep all the screenshots for this question organized in one place.
 
-nano process_monitor.c
+3. nano process_monitor.c
+I opened the Nano text editor to create and write the C program named process_monitor.c.
 
-gcc -Wall -Wextra process_monitor.c -o process_monitor
+4. gcc -Wall -Wextra process_monitor.c -o process_monitor
+I compiled the C program using GCC with extra warning options. If there were no errors, it created an executable file named process_monitor.
 
-./process_monitor | tee output.txt
+5. ./process_monitor | tee output.txt
+I ran the program and displayed its output on the terminal while also saving the same output to output.txt for future reference.
 
-ps -el | grep Z
+6. ps -el | grep Z
+I checked the list of running processes for any zombie processes by filtering for the Z process state. This helped me verify whether any zombie processes existed after running the program.
 
-nano explanations.txt
+7. nano explanations.txt
+I opened explanations.txt to write a short explanation for each command used in this question.
 
-nano commands.txt
+8. nano commands.txt
+I opened commands.txt to record all the commands I executed while completing this question.

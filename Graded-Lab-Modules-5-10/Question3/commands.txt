@@ -1,3 +1,5 @@
+Question 3: Commands and Explanation
+
 1. cd ~/Graded-Lab-Modules-5-10/Question3
 I changed to the Question3 folder so that all the files for this question would be created in the correct location.
 

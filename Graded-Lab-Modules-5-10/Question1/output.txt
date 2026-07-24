@@ -1,0 +1,15 @@
+Unique file backed up: submissions/studentA.txt
+Unique file backed up: submissions/studentB.txt
+Duplicate found: submissions/studentC.txt
+Original file: submissions/studentA.txt
+Unique file backed up: submissions/studentD.txt
+Duplicate found: submissions/studentE.txt
+Original file: submissions/studentB.txt
+
+Submission Processing Report
+============================
+Files processed: 5
+Duplicate files: 2
+Unique files backed up: 3
+Backup directory: unique_backup
+Error log: errors.log

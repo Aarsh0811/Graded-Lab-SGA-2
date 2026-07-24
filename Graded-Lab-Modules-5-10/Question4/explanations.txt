@@ -1,0 +1,23 @@
+QUESTION 4 EXPLANATION
+
+tail -F continuously watches the log file and displays entries as they are appended. 
+
+The capital F allows tail to continue following the file even if it is rotated or recreated. 
+
+The pipe operator sends the output of tail directly into grep. 
+
+This avoids creating unnecessary temporary files and allows the data to be processed as a stream. 
+
+grep --line-buffered "ERROR" selects only log entries containing ERROR. 
+
+Line buffering ensures that matching lines are processed immediately instead of being delayed. 
+
+The >> operator appends matching error messages to error_report.log. 
+
+Existing report data is preserved instead of being overwritten. 
+
+The 2>/dev/null redirection sends unwanted standard error messages to the null device. 
+
+This suppresses unnecessary output while the useful log data continues through the pipeline. 
+
+The pipeline is efficient because each new log line is examined only once and only relevant error entries are stored in the report.

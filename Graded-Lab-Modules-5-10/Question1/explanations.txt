@@ -1,0 +1,27 @@
+QUESTION 1 EXPLANATION 
+
+The script uses sha256sum to calculate a unique checksum for the content of each submission. 
+
+Files with the same checksum are treated as duplicates, even if they have different filenames. 
+
+The associative array known_hashes stores checksums that have already been processed. 
+
+When a new checksum is found, the file is copied into unique_backup. 
+
+When the checksum already exists, the duplicate counter is increased. 
+
+The > operator creates or overwrites report files. 
+
+The >> operator appends error messages without deleting previous messages. 
+
+The 2>> operator redirects standard error into errors.log. 
+
+The cp command backs up unique files. mkdir -p ensures that the backup directory exists. 
+
+rm -f removes files from an earlier test run without displaying unnecessary errors. 
+
+The pipe operator sends the output of sha256sum to awk. 
+
+Awk extracts only the checksum field needed for comparison. 
+
+The tee command displays program output in the terminal and saves the same output in output.txt.

@@ -1,0 +1,14 @@
+Parent process started. PID: 12874
+Child 1 started. PID: 12876
+Child 2 started. PID: 12877
+Child 3 started. PID: 12878
+Child 3 is simulating an unresponsive process.
+Child 1 completed normally.
+Parent collected child PID 12876 with exit status 0.
+Child 2 completed normally.
+Parent collected child PID 12877 with exit status 0.
+Child PID 12878 exceeded the 5-second timeout.
+Sending SIGTERM to child PID 12878.
+Unresponsive child PID 12878 was terminated and collected.
+All child processes have been collected.
+No zombie processes remain.

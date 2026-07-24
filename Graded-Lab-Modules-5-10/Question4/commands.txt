@@ -1,0 +1,25 @@
+cd ~/Graded-Lab-Modules-5-10/Question4
+
+mkdir screenshots
+
+printf "INFO Server started\nWARNING Disk usage at 70 percent\nINFO User connected\n" > app.log
+
+cat app.log
+
+tail -F app.log 2>/dev/null | grep --line-buffered "ERROR" >> error_report.log
+
+echo "INFO Scheduled task completed" >> app.log
+
+echo "ERROR Database connection failed" >> app.log
+
+echo "WARNING Memory usage increased" >> app.log
+
+echo "ERROR Child process stopped responding" >> app.log
+
+cat app.log
+
+cat error_report.log
+
+nano explanations.txt
+
+nano commands.txt

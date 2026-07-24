@@ -1,0 +1,15 @@
+cd ~/Graded-Lab-Modules-5-10/Question2
+
+mkdir screenshots
+
+nano process_monitor.c
+
+gcc -Wall -Wextra process_monitor.c -o process_monitor
+
+./process_monitor | tee output.txt
+
+ps -el | grep Z
+
+nano explanations.txt
+
+nano commands.txt

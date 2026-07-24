@@ -1,0 +1,17 @@
+cd ~/Graded-Lab-Modules-5-10/Question3
+
+mkdir screenshots
+
+nano employee_records.c
+
+gcc -Wall -Wextra employee_records.c -o employee_records
+
+./employee_records | tee output.txt
+
+ls -l employee_records.dat
+
+od -c employee_records.dat
+
+nano explanations.txt
+
+nano commands.txt

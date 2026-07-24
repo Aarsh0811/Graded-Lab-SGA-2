@@ -1,0 +1,29 @@
+cd ~/Graded-Lab-Modules-5-10/Question5
+
+mkdir screenshots
+
+nano vim_settings.txt
+
+printf "server_port=8080\nmax_connections=100\nlogging=enabled\n" > critical.conf
+
+cp critical.conf critical.conf.bak
+
+vim critical.conf
+
+ps -ef | grep "[v]im"
+
+kill -9 <Vim_PID>
+
+ls -la
+
+vim -r critical.conf
+
+cat critical.conf
+
+cat critical.conf.bak
+
+nano vi_recovery_report.txt
+
+nano explanations.txt
+
+nano commands.txt

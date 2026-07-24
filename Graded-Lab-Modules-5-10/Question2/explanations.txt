@@ -1,0 +1,22 @@
+QUESTION 2 EXPLANATION 
+fork() creates a new child process by duplicating the calling process. 
+
+The return value identifies whether the code is executing in the parent or child. 
+
+The parent stores the PID and starting time of every child.
+
+waitpid() with WNOHANG checks whether a child has finished without blocking the entire parent process. 
+
+When a child completes normally, waitpid() retrieves its termination status. 
+
+Collecting this status removes the child from the process table and prevents it from becoming a zombie. 
+
+The third child deliberately sleeps longer than the allowed timeout. 
+
+When the timeout is exceeded, the parent uses kill() to send SIGTERM. 
+
+SIGTERM requests graceful termination. 
+
+If a process does not respond, SIGKILL can force immediate termination. 
+
+Process creation, monitoring, waiting and signal handling work together to prevent excessive or unresponsive child processes from consuming server resources.

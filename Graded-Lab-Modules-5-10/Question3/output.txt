@@ -1,0 +1,13 @@
+File created successfully.
+Three employee records were written.
+Employee 102 was updated without rewriting the entire file.
+
+Retrieved third record:
+ID: 103, Name: Rahul, Salary: 48000.00
+
+All records after update:
+ID: 101, Name: Aman, Salary: 45000.00
+ID: 102, Name: Priya, Salary: 60000.00
+ID: 103, Name: Rahul, Salary: 48000.00
+
+File closed successfully.

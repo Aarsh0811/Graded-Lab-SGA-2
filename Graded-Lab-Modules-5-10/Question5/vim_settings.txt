@@ -1,0 +1,6 @@
+set swapfile
+set backup 
+set writebackup 
+set undofile 
+set undodir=. 
+set backupdir=.

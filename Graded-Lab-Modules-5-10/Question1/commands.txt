@@ -1,0 +1,29 @@
+cd ~/Graded-Lab-Modules-5-10/Question1
+
+mkdir submissions unique_backup screenshots
+
+echo "Operating Systems Assignment by Student A" > submissions/studentA.txt
+echo "Linux Shell Assignment by Student B" > submissions/studentB.txt
+cp submissions/studentA.txt submissions/studentC.txt
+echo "Process Management Assignment by Student D" > submissions/studentD.txt
+cp submissions/studentB.txt submissions/studentE.txt
+
+ls -l submissions
+
+nano duplicate_backup.sh
+
+bash -n duplicate_backup.sh
+
+chmod +x duplicate_backup.sh
+
+./duplicate_backup.sh | tee output.txt
+
+cat report.txt
+
+ls -l unique_backup
+
+cat errors.log
+
+nano commands.txt
+
+nano explanations.txt

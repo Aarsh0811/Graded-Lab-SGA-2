@@ -1,0 +1,88 @@
+QUESTION 5 – VI/VIM RECOVERY EVALUATION
+
+1. Swap Files
+
+Vim automatically creates a swap file while editing a document. The swap file stores unsaved changes and allows recovery after an unexpected crash. After a crash, the command "vim -r filename" can recover the most recent unsaved edits.
+
+Advantages:
+- Recovers unsaved work.
+- Automatically created while editing.
+- Very effective after crashes.
+
+Limitations:
+- Cannot recover data if the swap file is deleted or corrupted.
+
+------------------------------------------------------------
+
+2. Undo History
+
+Undo history allows previous changes to be reversed. When persistent undo is enabled using the "undofile" option, undo information is preserved even after closing Vim.
+
+Advantages:
+- Restores previous editing states.
+- Useful after accidental modifications.
+
+Limitations:
+- Does not always recover completely unsaved work after a crash.
+
+------------------------------------------------------------
+
+3. Registers
+
+Registers temporarily store copied, deleted, and modified text inside Vim. Commands such as ":registers" display their contents.
+
+Advantages:
+- Can recover recently deleted or copied text.
+- Useful during editing.
+
+Limitations:
+- Registers are not intended for full file recovery.
+- Some register contents may be lost after a crash.
+
+------------------------------------------------------------
+
+4. Backup Files
+
+Backup files store the previously saved version of a file. They can be created automatically or manually before editing.
+
+Advantages:
+- Protect previously saved data.
+- Easy to restore if the main file becomes corrupted.
+
+Limitations:
+- They do not contain the latest unsaved edits.
+
+------------------------------------------------------------
+
+5. Auto-Recovery
+
+When Vim detects an existing swap file, it automatically offers recovery options. The command "vim -r filename" can also be used manually.
+
+Advantages:
+- Easy recovery process.
+- Restores unsaved changes from the swap file.
+
+Limitations:
+- Depends on the availability of the swap file.
+
+------------------------------------------------------------
+
+Most Reliable Recovery Strategy
+
+The best recovery strategy is to combine multiple recovery mechanisms.
+
+1. Keep swap files enabled.
+2. Enable backup and write-backup options.
+3. Enable persistent undo history.
+4. Create manual backup copies of important configuration files.
+5. Use version control such as Git for critical files.
+6. Recover using "vim -r filename" after a crash.
+7. Verify the recovered file before deleting the swap file.
+
+Using several recovery mechanisms together provides protection against accidental deletion, editing mistakes, and unexpected system crashes.
+
+------------------------------------------------------------
+
+Conclusion
+
+Swap files are the primary recovery mechanism because they preserve unsaved changes after a crash. Backup files protect previously saved versions, while undo history allows changes to be reversed. Combining swap files, backups, persistent undo, and version control provides the most reliable recovery strategy for critical configuration files.

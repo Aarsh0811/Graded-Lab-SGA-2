@@ -1,0 +1,19 @@
+QUESTION 3 EXPLANATION 
+
+open() creates or opens the file and returns a file descriptor. 
+
+O_CREAT creates the file if it does not exist, O_TRUNC clears old data and O_RDWR allows both reading and writing. 
+
+write() stores the fixed-size Employee structures directly in the file. 
+
+Fixed-size records make it possible to calculate the exact byte position of any employee. 
+
+lseek() changes the current file offset. 
+
+The second record is located at one times sizeof(Employee), so it can be updated without rewriting the first or third record. read() retrieves a selected record from the current file offset. 
+
+Moving directly to a record with lseek() makes random access efficient. 
+
+close() releases the file descriptor and ensures that the operating system no longer keeps the file open for the program. The file uses binary fixed-length records. 
+
+This design supports fast updates and retrieval because each record position can be calculated mathematically.

@@ -1,29 +1,50 @@
-cd ~/Graded-Lab-Modules-5-10/Question1
+1. cd ~/Graded-Lab-Modules-5-10/Question1
+I changed into the Question1 folder so that all the files and folders I created would be saved in the correct location.
 
-mkdir submissions unique_backup screenshots
+2. mkdir submissions unique_backup screenshots
+I created three folders to keep the assignment organized. Each folder is used for a different purpose, such as submissions, backups, and screenshots.
 
-echo "Operating Systems Assignment by Student A" > submissions/studentA.txt
-echo "Linux Shell Assignment by Student B" > submissions/studentB.txt
-cp submissions/studentA.txt submissions/studentC.txt
-echo "Process Management Assignment by Student D" > submissions/studentD.txt
-cp submissions/studentB.txt submissions/studentE.txt
+3. echo "Operating Systems Assignment by Student A" > submissions/studentA.txt
+I created the file studentA.txt and added the assignment text to it. The > operator writes the text into the file.
 
-ls -l submissions
+4. echo "Linux Shell Assignment by Student B" > submissions/studentB.txt
+I created another text file for Student B and stored the given assignment content in it.
 
-nano duplicate_backup.sh
+5. cp submissions/studentA.txt submissions/studentC.txt
+I copied studentA.txt to create studentC.txt. This gave Student C a file with the same contents as Student A’s file.
 
-bash -n duplicate_backup.sh
+6. echo "Process Management Assignment by Student D" > submissions/studentD.txt
+I created studentD.txt and wrote the required assignment text into the file.
 
-chmod +x duplicate_backup.sh
+7. cp submissions/studentB.txt submissions/studentE.txt
+I made a copy of studentB.txt and saved it as studentE.txt. Both files contain the same information.
 
-./duplicate_backup.sh | tee output.txt
+8. ls -l submissions
+I listed all the files in the submissions folder with detailed information such as permissions, size, and modification date. This helped me confirm that the files were created successfully.
 
-cat report.txt
+9. nano duplicate_backup.sh
+I opened the Nano text editor to create and edit the shell script that would perform the backup task.
 
-ls -l unique_backup
+10. bash -n duplicate_backup.sh
+I checked the script for any syntax errors before running it. This helped make sure the script was written correctly.
 
-cat errors.log
+11. chmod +x duplicate_backup.sh
+I gave the script execute permission so that it could be run directly from the terminal.
 
-nano commands.txt
+12. ./duplicate_backup.sh | tee output.txt
+I ran the script and saved its output to output.txt while also displaying the output on the terminal. This allowed me to view and save the results at the same time.
 
-nano explanations.txt
+13. cat report.txt
+I displayed the contents of report.txt to verify that the script generated the expected report.
+
+14. ls -l unique_backup
+I viewed the contents of the unique_backup folder to confirm that the backup files had been created successfully.
+
+15. cat errors.log
+I checked the errors.log file to see if any errors were recorded while the script was running.
+
+16. nano commands.txt
+I opened commands.txt to record all the commands I used during the lab.
+
+17. nano explanations.txt
+I opened explanations.txt so I could write a brief explanation for each command used in the assignment.

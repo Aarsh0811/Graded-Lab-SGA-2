@@ -1,17 +1,26 @@
-cd ~/Graded-Lab-Modules-5-10/Question3
+1. cd ~/Graded-Lab-Modules-5-10/Question3
+I changed to the Question3 folder so that all the files for this question would be created in the correct location.
 
-mkdir screenshots
+2. mkdir screenshots
+I created a screenshots folder to store all the screenshots required for this question.
 
-nano employee_records.c
+3. nano employee_records.c
+I opened the Nano text editor to create and write the C program named employee_records.c.
 
-gcc -Wall -Wextra employee_records.c -o employee_records
+4. gcc -Wall -Wextra employee_records.c -o employee_records
+I compiled the C program using GCC with additional warning options. This created an executable file named employee_records if there were no compilation errors.
 
-./employee_records | tee output.txt
+5. ./employee_records | tee output.txt
+I ran the program and displayed its output on the terminal while also saving the output to output.txt. This allowed me to keep a copy of the program’s results.
 
-ls -l employee_records.dat
+6. ls -l employee_records.dat
+I listed the details of the employee_records.dat file to confirm that it had been created successfully and to check its size and permissions.
 
-od -c employee_records.dat
+7. od -c employee_records.dat
+I viewed the contents of the binary file in a readable character format. This helped me verify that the employee records were written to the file.
 
-nano explanations.txt
+8. nano explanations.txt
+I opened explanations.txt to write a brief explanation for each command used in this question.
 
-nano commands.txt
+9. nano commands.txt
+I opened commands.txt to record all the commands I used while completing this question.

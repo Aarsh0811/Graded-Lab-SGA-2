@@ -1,29 +1,44 @@
-cd ~/Graded-Lab-Modules-5-10/Question5
+1. cd ~/Graded-Lab-Modules-5-10/Question5
+I changed to the Question5 folder so that all the files for this question would be created in the correct location.
 
-mkdir screenshots
+2. mkdir screenshots
+I created a screenshots folder to keep all the screenshots for this question organized.
 
-nano vim_settings.txt
+3. nano vim_settings.txt
+I opened the Nano text editor to create and edit the vim_settings.txt file.
 
-printf "server_port=8080\nmax_connections=100\nlogging=enabled\n" > critical.conf
+4. printf "server_port=8080\nmax_connections=100\nlogging=enabled\n" > critical.conf
+I created the critical.conf file and added some sample configuration settings to it. This file was later used to demonstrate Vim recovery.
 
-cp critical.conf critical.conf.bak
+5. cp critical.conf critical.conf.bak
+I created a backup copy of critical.conf before making any changes. This ensured that I had the original file available if something went wrong.
 
-vim critical.conf
+6. vim critical.conf
+I opened critical.conf in the Vim editor to make changes and simulate an interrupted editing session.
 
-ps -ef | grep "[v]im"
+7. ps -ef | grep "[v]im"
+I checked for any running Vim processes to find the process ID (PID) of the editor. This PID was needed for the next step.
 
-kill -9 <Vim_PID>
+8. kill -9 <Vim_PID>
+I forcefully terminated the Vim process using its PID to simulate an unexpected crash. This created a swap file that could later be recovered.
 
-ls -la
+9. ls -la
+I listed all files, including hidden ones, to verify that the Vim swap file had been created after the crash.
 
-vim -r critical.conf
+10. vim -r critical.conf
+I opened the recovery mode in Vim to restore the unsaved changes from the swap file. This demonstrated how Vim can recover work after an unexpected shutdown.
 
-cat critical.conf
+11. cat critical.conf
+I displayed the contents of critical.conf to confirm that the recovered file contained the expected data.
 
-cat critical.conf.bak
+12. cat critical.conf.bak
+I viewed the backup file to compare it with the recovered file and verify that the original copy was preserved.
 
-nano vi_recovery_report.txt
+13. nano vi_recovery_report.txt
+I opened vi_recovery_report.txt to document the recovery process and my observations.
 
-nano explanations.txt
+14. nano explanations.txt
+I opened explanations.txt to write a brief explanation for each command used in this question.
 
-nano commands.txt
+15. nano commands.txt
+I opened commands.txt to record all the commands I executed while completing this question.
